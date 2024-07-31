@@ -73,7 +73,8 @@ main {
     color: white;
     width: 25%;
 }
-.btn{
+
+.btn {
 
     font-weight: bold;
     font-size: clamp(18px, 2vw, 20px);
@@ -82,6 +83,7 @@ main {
     padding-block: 15px;
     padding-inline: 30px;
 }
+
 #btn {
     font-weight: bold;
     font-size: clamp(18px, 2vw, 20px);
@@ -92,15 +94,49 @@ main {
     width: 25%;
 
 }
-#btn:hover{
+
+#btn:hover {
     background-color: rgba(255, 255, 255, 0.479);
     color: white;
 }
+
 #for-width {
     width: 15%;
 }
-.limit{
+
+.limit {
     color: white;
     font-weight: bold;
-    font-size: clamp(20px,2vw ,30px);
+    font-size: clamp(20px, 2vw, 30px);
+}
+
+@media(max-width:430px) {
+    .lower {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .textBox {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+height: 50%;
+        padding-block: 20px;
+    }
+    #input{
+     height: auto;
+     width: auto;
+
+    }
+#btn{
+    width: auto;
+}
+.overlay{
+    height: auto;
+}
+.head{
+    text-align: center;
+}
 }
